@@ -4,26 +4,7 @@
  * Feed publishing: *  when a user publishes a post, corresponding data is written into cache and database. A post is populated to her friends’ news feed. 
  * Newsfeed building:*  for simplicity, let us assume the news feed is built by aggregating friends’ posts in reverse chronological order.
 
-Figure 3-1(11-2) and Figure 3-2(11-3) present high-level designs for feed publishing and news feed building flows, respectively.
-
-### Feed publishing:  
-User makes a post with content "Hello" through API.
-
-<img width="500" height="533" alt="image" src="https://github.com/user-attachments/assets/87aa66a5-4fe1-473c-a8e3-d1a75fa9bd8c" />
-
-### Newsfeed building:
-A user sends a reuest to retrive her news feed
-
-<img width="450" height="495" alt="image" src="https://github.com/user-attachments/assets/f53fb1e6-ea40-4a4a-8389-cc8f72547db6" />
-
-In the high-level design phase, the system looks deceptively simple:
-
--   A client requests a feed (`/v1/me/feed`) through a **Load Balancer**.
-    
--   Traffic is routed to a monolithic or singular **News Feed Service**.
-    
--   The data is pulled directly out of a **News Feed Cache**.
-    
+- [High level Design](highLevelDesign.md)
 
 ### Feed publishing deep dive (Figure 3-3(11-4))
 
