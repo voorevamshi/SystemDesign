@@ -5,6 +5,7 @@
  * Newsfeed building:*  for simplicity, let us assume the news feed is built by aggregating friends’ posts in reverse chronological order.
 
 - [High level Design](highLevelDesign.md)
+- [Q & A](q&a.md)
 
 ### Feed publishing deep dive (Figure 3-3(11-4))
 
